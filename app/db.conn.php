@@ -1,14 +1,14 @@
 <?php 
 
 # server name
-$sName = "localhost";
+$sName = "srv945.hstgr.io";
 # user name
-$uName = "root";
+$uName = "u704466700_mics_chat";
 # password
-$pass = "";
+$pass = 'PA$$w0rd232406';
 
 # database name
-$db_name = "chat_app_db";
+$db_name = "u704466700_mics_chat";
 
 #creating database connection
 try {
