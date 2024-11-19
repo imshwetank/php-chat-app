@@ -67,7 +67,7 @@ header("X-XSS-Protection: 1; mode=block"); // Block XSS attacks
 		           Password</label>
 		    <input type="password" 
 		           class="form-control"
-				   autocomplete="off"
+				   autocomplete="new-password"
 		           name="password">
 		  </div>
 		  
