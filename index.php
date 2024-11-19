@@ -28,6 +28,7 @@ header("X-XSS-Protection: 1; mode=block"); // Block XSS attacks
              vh-100">
 	 <div class="w-400 p-5 shadow rounded">
 	 	<form method="post" 
+		autocomplete="off"
 	 	      action="app/http/auth.php">
 	 		<div class="d-flex
 	 		            justify-content-center
@@ -67,7 +68,7 @@ header("X-XSS-Protection: 1; mode=block"); // Block XSS attacks
 		           Password</label>
 		    <input type="password" 
 		           class="form-control"
-				   autocomplete="off"
+				   autocomplete="new-password"
 		           name="password">
 		  </div>
 		  
