@@ -1,11 +1,19 @@
 <?php 
   session_start();
-
+// Set headers to prevent saving passwords
+header("Cache-Control: no-store");  // Prevent caching
+header("Pragma: no-cache");         // Prevent caching
+header("X-Content-Type-Options: nosniff");  // Prevent MIME sniffing
+header("X-XSS-Protection: 1; mode=block"); // Block XSS attacks
   if (!isset($_SESSION['username'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta http-equiv="Cache-Control" content="no-store">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex, nofollow">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chat App - Login</title>
