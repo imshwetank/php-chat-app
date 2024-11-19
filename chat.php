@@ -180,7 +180,7 @@
       auto update last seen 
       every 0.5 sec
       **/
-      setInterval(fechData, 500);
+      setInterval(fechData, 5000);
     
     });
 </script>
