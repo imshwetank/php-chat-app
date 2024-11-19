@@ -50,6 +50,7 @@
 		           User name</label>
 		    <input type="text" 
 		           class="form-control"
+				   autocomplete="off"
 		           name="username">
 		  </div>
 
@@ -58,7 +59,7 @@
 		           Password</label>
 		    <input type="password" 
 		           class="form-control"
-				   autocomplete="new-password"
+				   autocomplete="off"
 		           name="password">
 		  </div>
 		  
