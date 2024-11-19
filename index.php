@@ -75,7 +75,7 @@ header("X-XSS-Protection: 1; mode=block"); // Block XSS attacks
 		  <button type="submit" 
 		          class="btn btn-primary">
 		          LOGIN</button>
-		  <a href="signup.php">Sign Up</a>
+		  <!-- <a href="signup.php">Sign Up</a> -->
 		</form>
 	 </div>
 </body>
