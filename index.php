@@ -58,6 +58,7 @@
 		           Password</label>
 		    <input type="password" 
 		           class="form-control"
+				   autocomplete="new-password"
 		           name="password">
 		  </div>
 		  
@@ -75,3 +76,16 @@
    	exit;
   }
  ?>
+ <script type="text/javascript">
+  // Clear any potentially stored session/localStorage data on page load
+  window.onload = function() {
+    // Clears all sessionStorage data
+    sessionStorage.clear();
+
+    // Clears all localStorage data
+    localStorage.clear();
+
+    // Optionally, clear form inputs as well
+    document.getElementsByName("password")[0].value = "";
+  };
+</script>
