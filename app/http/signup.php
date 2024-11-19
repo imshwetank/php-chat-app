@@ -70,24 +70,24 @@ if(isset($_POST['username']) &&
                # get image extension store it in var
       		   $img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
 
-               /** 
+               /*
 				convert the image extension into lower case 
 				and store it in var 
 				**/
 				$img_ex_lc = strtolower($img_ex);
 
-				/** 
+				/*
 				crating array that stores allowed
 				to upload image extension.
 				**/
 				$allowed_exs = array("jpg", "jpeg", "png");
 
-				/** 
+				/*
 				check if the the image extension 
 				is present in $allowed_exs array
-				**/
+				*/
 				if (in_array($img_ex_lc, $allowed_exs)) {
-					/** 
+					/*
 					 renaming the image with user's username
 					 like: username.$img_ex_lc
 					**/
