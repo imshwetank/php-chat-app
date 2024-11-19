@@ -1,6 +1,10 @@
 <?php 
   session_start();
-
+// Set headers to prevent saving passwords
+header("Cache-Control: no-store");  // Prevent caching
+header("Pragma: no-cache");         // Prevent caching
+header("X-Content-Type-Options: nosniff");  // Prevent MIME sniffing
+header("X-XSS-Protection: 1; mode=block"); // Block XSS attacks
   if (isset($_SESSION['username'])) {
   	# database connection file
   	include 'app/db.conn.php';
