@@ -1,5 +1,5 @@
 <?php 
-
+date_default_timezone_set("Asia/Calcutta"); 
 # server name
 $sName = "srv945.hstgr.io";
 # user name
