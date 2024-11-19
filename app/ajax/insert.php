@@ -17,12 +17,12 @@ if (isset($_SESSION['username'])) {
 
 	# get the logged in user's username from the SESSION
 	$from_id = $_SESSION['user_id'];
-
+	$php_timestamp = date("Y-m-d H:i:s", time());
 	$sql = "INSERT INTO 
-	       chats (from_id, to_id, message) 
-	       VALUES (?, ?, ?)";
+	       chats (from_id, to_id, message,created_at) 
+	       VALUES (?, ?, ?, ?)";
 	$stmt = $conn->prepare($sql);
-	$res  = $stmt->execute([$from_id, $to_id, $message]);
+	$res  = $stmt->execute([$from_id, $to_id, $message, $php_timestamp]);
     
     # if the message inserted
     if ($res) {
