@@ -159,7 +159,7 @@
       auto update last seen 
       every 10 sec
       **/
-      setInterval(lastSeenUpdate, 10000);
+      setInterval(lastSeenUpdate, 20000);
 
 
 
@@ -180,7 +180,7 @@
       auto update last seen 
       every 0.5 sec
       **/
-      setInterval(fechData, 5000);
+      setInterval(fechData, 20000);
     
     });
 </script>
